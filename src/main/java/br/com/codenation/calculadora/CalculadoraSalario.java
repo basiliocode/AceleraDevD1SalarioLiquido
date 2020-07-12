@@ -13,7 +13,7 @@ public class CalculadoraSalario {
 		if(salarioBase < 1039)
 			return 0;
 
-		double salarioLiquido = calcularInss(1434.79);
+		double salarioLiquido = calcularInss(salarioBase);
 		salarioLiquido = calcularIRRF(salarioLiquido);
 		return Math.round(salarioLiquido);
 	}
